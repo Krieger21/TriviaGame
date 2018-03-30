@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+
+    <strong> <h1> Lord of the Rings Trivia Game!</h1> </strong>
+    <br>
+    <br>
+    <div style="text-align:center;">
+        
+        <button id="start"> GLENN </button>
+    
+    </div>
+
+    <div id="timerr">Time Remaining: <span id="timer"></span> </div>
+
+    <div id="quiz">
+        <h1>Who is the main 'bad-guy' in the Lord of the Rings Universe?</h1>
+        <form name="1">
+        <input type="radio" name="q1" value="Saruman" id="q1a"> Saruman
+        <input type="radio" name="q1" value="Sauron" id="q1b"> Sauron
+        <input type="radio" name="q1" value="Morgoth" id="q1c"> Morgoth
+        <input type="radio" name="q1" value="Gandalf" id="q1d"> Gandalf
+        </form>
+
+        <h1>What is the name of the mountain(s) that Bilbo travelled to in the Hobbit?</h1>
+        <form id="2">
+        <input type="radio" name="q2" value="Mount Doom" id="q2a"> Mount Doom
+        <input type="radio" name="q2" value="The Misty Mountains" id="q2b"> The Misty Mountains
+        <input type="radio" name="q2" value="The Grey Mountains" id="q2c"> The Grey Mountains
+        <input type="radio" name="q2" value="Erebor" id="q2d"> Erebor
+        </form>
+
+        <h1>Who is Isildur's heir?</h1>
+        <form id="3">
+        <input type="radio" name="q3" value="Boromir" id="q3a"> Boromir
+        <input type="radio" name="q3" value="Frodo" id="q3b"> Frodo
+        <input type="radio" name="q3" value="Aragorn" id="q3c"> Aragorn
+        <input type="radio" name="q3" value="Gimli" id="q3d"> Gimli
+        </form>
+
+        <h1>Who was the first High King of Numenor?</h1>
+        <form id="4">
+        <input type="radio" name="q4" value="Elros Tar-Minyatur" id="q4a"> Elros Tar-Minyatur
+        <input type="radio" name="q4" value="Tar-Atanamir" id="q4b"> Tar-Atanamir
+        <input type="radio" name="q4" value="Ar-Gimilzôr" id="q4c"> Ar-Gimilzôr
+        <input type="radio" name="q4" value="Ar-Pharazôn" id="q4d"> Ar-Pharazôn
+        </form>
+
+        <h1>What did the Elven King Thingol send Beren to retrieve berfore he allowed him to marry Luthien?</h1>
+        <form id="5">
+        <input type="radio" name="q5" value="Narsil" id="q5a"> The sword Narsil
+        <input type="radio" name="q5" value="Silmaril" id="q5b"> A Silmaril
+        <input type="radio" name="q5" value="Arkenstone" id="q5c"> The Arkenstone
+        <input type="radio" name="q5" value="Crown" id="q5d"> The Crown of Gondor
+        </form>
+
+        <h1>Who was the first elf awakened by Illuvatar in Middle-Earth?</h1>
+        <form id="6">
+        <input type="radio" name="q6" value="Tata" id="q6a"> Tata
+        <input type="radio" name="q6" value="Enel" id="q6b"> Enel
+        <input type="radio" name="q6" value="Enelyë"id="q6c"> Enelyë
+        <input type="radio" name="q6" value="Imin" id="q6d"> Imin
+        </form>
+
+        <h1>What creature devoured the two trees of Valinor, Telperion and Laurelin?</h1>
+        <form id="7">
+        <input type="radio" name="q7" value="Ungoliant" id="q7a"> Ungoliant
+        <input type="radio" name="q7" value="Gothmog" id="q7b"> Gothmog
+        <input type="radio" name="q7" value="Ancalagon" id="q7c"> Ancalagon
+        <input type="radio" name="q7" value="Smaug" id="q7d"> Smaug
+        </form>
+
+        <h1>What tragic hero of the first age was known as the Blacksword of Nargothrond, and wielded the blade "Iron of Death"?</h1>
+        <form id="8">
+        <input type="radio" name="q8" value="Beleg" id="q8a"> Beleg Cúthalion
+        <input type="radio" name="q8" value="Turin" id="q8b"> Turin Turambar
+        <input type="radio" name="q8" value="Fingolfin" id="q8c"> Fingolfin
+        <input type="radio" name="q8" value="Tuor" id="q8d"> Tuor Eladar
+        </form>
+
+        <h1>What was the name of the first fortress Melkor built in Middle-Earth?</h1>
+        <form id="9">
+        <input type="radio" name="q9" value="Durthang" id="q9a"> Durthang
+        <input type="radio" name="q9" value="Mordor" id="q9b"> Mordor
+        <input type="radio" name="q9" value="Utumno" id="q9c"> Utumno
+        <input type="radio" name="q9" value="Angband" id="q9d"> Angband
+        </form>
+
+        <h1>Who is the only member of the Valar that Morgoth feared?</h1>
+        <form id="9">
+        <input type="radio" name="q10" value="Tulkas" id="q10a"> Tulkas
+        <input type="radio" name="q10" value="Manwe" id="q10b"> Manwe
+        <input type="radio" name="q10" value="Varda" id="q10c"> Varda
+        <input type="radio" name="q10" value="Yavanna" id="q10d"> Yavanna
+        </form>
+
+        <h1>Who is the best character in The Lord of the Rings?</h1>
+        <form id="10">
+        <input type="radio" name="q11" value="Sam" id="q11a"> Sam Gamgee
+        <input type="radio" name="q11" value="Sam"id="q11b"> Sam Gamgee
+        <input type="radio" name="q11" value="Sam"id="q11c"> Sam Gamgee
+        <input type="radio" name="q11" value="Sam"id="q11d"> Sam Gamgee
+        </form>
+    </div>
+
+    <div id="correct">Corect Answers: <span id="corr"></span> </div>
+    <div id="wrong">Wrong Answers: <span id="wro"></span> </div>
+    
+</body>
+</html>
